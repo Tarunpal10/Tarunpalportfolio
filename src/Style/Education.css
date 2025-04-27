@@ -1,0 +1,217 @@
+
+/* Parallax Image Sections */
+.pimg1 {
+    background-image: url(../Assets/unsplash1.avif);
+    min-height: 100vh;
+  }
+  
+  .pimg2 {
+    background-image: url(../Assets/un4.jpg);
+    min-height: 50vh;
+  }
+  
+  .pimg3 {
+    background-image: url(../Assets/unsplash2.jpg);
+    min-height: 50vh;
+  }
+  
+  .pimg1,
+  .pimg2,
+  .pimg3 {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  
+  .ptext {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: black;
+    font-size: clamp(1rem, 5vw, 1.7rem);
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+    transform: translateY(-50%);
+  }
+  
+  .section {
+    padding: 3rem 5%;
+    text-align: center;
+  }
+  
+  .section-light {
+    background-color: #f4f4f4;
+    color: #666;
+  }
+  
+  .section-dark {
+    background-color: #282e34;
+    color: #ddd;
+  }
+  
+  /* Education Timeline */
+  #schooling, #ug, #pg {
+    margin-top: 5rem;
+  }
+  
+  .xx, .xii, .bca, .mca {
+    border-left: 4px solid rgb(207, 82, 82);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: start;
+    align-items: flex-start;
+    padding: 1.25rem 1.5rem;
+    color: black;
+    margin-left: 1rem;
+  }
+  
+  .year {
+    color: rgb(207, 82, 82);
+    margin-top: 0.2rem;
+  }
+  
+  .X {
+    border: none;
+    outline: none;
+    background-color: rgb(207, 82, 82);
+    padding: 0.125rem 0.2rem;
+    font-weight: 600;
+  }
+  
+  .xii {
+    margin-top: 1.25rem;
+  }
+  
+  .bca, .mca {
+    color: white;
+  }
+  
+  .bca > button {
+    padding: 0.2rem 0.5rem;
+  }
+  
+  /* Intern Section */
+  .intern {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    height: auto;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .textBg {
+    margin-bottom: 3rem;
+    background: #313534;
+    color: #fff;
+    padding: 1.25rem 1.5rem;
+    font-size: clamp(1rem, 3vw, 1.4rem);
+    font-weight: 550;
+  }
+  
+  .intern h3 {
+    margin-top: 3rem;
+    color: rgb(216, 99, 99);
+    font-weight: 600;
+  }
+  
+  .intern p {
+    margin-top: 0.125rem;
+    color: #000000;
+    font-weight: 600;
+  }
+  
+  #course p,
+  #certi p,
+  #cwr p {
+    color: white;
+  }
+  
+  /* Media Queries */
+  
+  /* Small devices (phones) */
+  @media only screen and (max-width: 600px) {
+    .pimg2, .pimg3 {
+      min-height: 40vh;
+    }
+    
+    /* Fix for parallax on mobile */
+    .pimg1, .pimg2, .pimg3 {
+      background-attachment: scroll;
+    }
+    
+    .ptext {
+      letter-spacing: 0.25rem;
+    }
+    
+    .section {
+      padding: 2rem 1rem;
+    }
+    
+    .xx, .xii, .bca, .mca {
+      padding: 1rem;
+      margin-left: 0.5rem;
+    }
+    
+    .textBg {
+      padding: 1rem;
+    }
+    
+    #schooling, #ug, #pg {
+      margin-top: 3rem;
+    }
+    
+    .intern h3 {
+      margin-top: 2rem;
+    }
+  }
+  
+  /* Medium devices (tablets) */
+  @media only screen and (min-width: 601px) and (max-width: 960px) {
+    .pimg2, .pimg3 {
+      min-height: 45vh;
+    }
+    
+    /* Better experience on some tablets */
+    .pimg1, .pimg2, .pimg3 {
+      background-attachment: scroll;
+    }
+    
+    .section {
+      padding: 2.5rem 2rem;
+    }
+    
+    .intern {
+      max-width: 90%;
+    }
+    
+    .xx, .xii, .bca, .mca {
+      padding: 1.2rem;
+    }
+  }
+  
+  /* Large devices (desktops) */
+  @media only screen and (min-width: 961px) and (max-width: 1280px) {
+    .intern {
+      max-width: 80%;
+    }
+  }
+  
+  /* For users who prefer reduced motion */
+  @media (prefers-reduced-motion: reduce) {
+    .pimg1, .pimg2, .pimg3 {
+      background-attachment: scroll;
+    }
+  }
+  
+  /* Fix for iOS Safari parallax issue */
+  @supports (-webkit-touch-callout: none) {
+    .pimg1, .pimg2, .pimg3 {
+      background-attachment: scroll;
+    }
+  }

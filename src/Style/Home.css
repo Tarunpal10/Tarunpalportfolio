@@ -1,0 +1,258 @@
+
+
+/* Base styles for all devices */
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#home {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+div {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.heading {
+    height: 100vh;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    text-shadow: 0.5rem 0.5rem 0.5rem rgb(54, 45, 45);
+    font-size: 2.5rem;
+    font-weight: 650;
+    padding: 5% 5% 0 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-image: url(../Assets/new2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.heading > h1 > b {
+    color: rgb(53, 142, 210);
+    font-size: 120%;
+}
+
+.heading > div {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.heading > div > a {
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    color: rgb(247, 245, 245);
+    text-decoration: none;
+    font-family: sans-serif;
+    padding: 0.5rem 0.8rem;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+    display: inline-block;
+}
+
+.heading > div > a:hover {
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    transform: translateY(10px);
+}
+
+.heading2 {
+    height: auto;
+    min-height: 80vh;
+    width: 100%;
+    color: rgba(128, 210, 210, 0.781);
+    font-size: 2.5rem;
+    font-weight: 650;
+    padding: 15% 5% 5% 5%;
+    background: url(../Assets/new.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.connctiom {
+    border: 2px solid rgb(11, 11, 11);
+    max-width: 700px;
+    width: 90%;
+    border-radius: 10px;
+    color: white;
+    padding: 1rem;
+    margin: 2rem auto;
+    background-color: white;
+    color: black;
+    /* margin-left: 465px !important; */
+    transition: all 0.5s ease-in-out;
+}
+
+.projects {
+    background-color: black;
+    color: white;
+    border: 2px solid gray;
+    max-width: 700px;
+    width: 90%;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 2rem auto;
+    /* margin-left: 550px !important; */
+    transition: all 0.5s ease-in-out;
+}
+
+.projects:hover {
+    cursor: pointer;
+    transform: translateY(15px);
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+#mained {
+    gap: 2rem;
+    margin-top: 12rem;
+    text-align: center;
+    color: white;
+}
+
+/* @keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+} */
+
+#blck {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover;
+}
+
+.contacte {
+    margin: 2rem auto;
+    border: 2px solid gray;
+    max-width: 800px;
+    width: 90%;
+    border-radius: 10px;
+    color: white;
+    padding: 1rem;
+    background-color: black;
+}
+
+.connctiom:hover {
+    cursor: pointer;
+    transform: translateY(-15px);
+    background-color: black;
+    color: white;
+}
+
+.mail {
+    margin-top: 5rem;
+}
+
+/* Media Queries for responsive design */
+
+/* Small devices (phones) */
+@media only screen and (max-width: 600px) {
+    .heading {
+        padding: 5% 3% 0 3%;
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    
+    .heading > h1 > b {
+        font-size: 110%;
+    }
+    
+    .heading > div {
+        justify-content: center;
+    }
+    
+    .heading2 {
+        font-size: 1.8rem;
+        padding: 20% 3% 5% 3%;
+        text-align: center;
+    }
+    
+    .connctiom, .projects, .contacte {
+        width: 85%;
+        padding: 0.8rem;
+        margin-left: 220px;
+    }
+    
+    @keyframes appear {
+        from {
+            opacity: 0;
+            transform: translateX(-100%);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+}
+
+/* Medium devices (tablets) */
+@media only screen and (min-width: 601px) and (max-width: 960px) {
+    .heading {
+        padding: 5% 5% 0 5%;
+        font-size: 2.2rem;
+    }
+    
+    .heading2 {
+        font-size: 2.2rem;
+        padding: 18% 5% 5% 5%;
+    }
+    
+    .connctiom:hover, .projects:hover {
+        transform: translateY(-10px);
+    }
+}
+
+/* Large devices (desktops) */
+@media only screen and (min-width: 961px) and (max-width: 1280px) {
+    .connctiom, .projects, .contacte {
+        width: 75%;
+    }
+}
+
+/* Extra-large devices */
+@media only screen and (min-width: 1281px) {
+    .heading {
+        font-size: 3rem;
+    }
+    
+    .heading > h1 > b {
+        font-size: 130%;
+    }
+    
+    .heading2 {
+        font-size: 3rem;
+    }
+}
+
+/* For ensuring smooth animations across devices */
+@media (prefers-reduced-motion: reduce) {
+    .connctiom:hover, .projects:hover, .heading > div > a:hover {
+        transition: none;
+        transform: none;
+    }
+    
+    #blck {
+        animation: none;
+    }
+}

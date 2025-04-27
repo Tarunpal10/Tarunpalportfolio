@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .project-main {
+    height: auto;
+    width: 100%;
+    background: linear-gradient(90deg, rgb(115, 114, 147) 0%, rgb(151, 151, 163) 35%, rgb(131, 169, 177) 100%);
+    padding: 2rem 1rem;
+  }
+  
+  .project-main h2, 
+  .project-main p {
+    text-align: center;
+  }
+  
+  .project-main h2 {
+    color: rgb(202, 78, 78);
+    font-size: clamp(1.75rem, 5vw, 2.2rem);
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  .project-main > p {
+    color: white;
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    max-width: 800px;
+    width: 90%;
+    margin: 0 auto 2rem auto;
+  }
+  
+  .p-p-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .p-container {
+    height: auto;
+    width: 100%;
+    max-width: 350px;
+    background-color: rgba(246, 243, 243, 0.073);
+    box-shadow: 8px 6px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    margin-bottom: 1.5rem;
+  }
+  
+  .p-container:hover {
+    transform: translateY(-15px);
+  }
+  
+  .p-container img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: cover;
+  }
+  
+  .p-container h3 {
+    padding: 1rem 1.5rem;
+  }
+  
+  .p-container h3 a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .h3-p {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 0.5rem;
+  }
+  
+  .p-container > h1 {
+    color: rgb(0, 0, 0);
+    font-size: clamp(1.5rem, 4vw, 1.8rem);
+    margin: 0.5rem 1.5rem;
+  }
+  
+  .p-p-main button > a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+  }
+  
+  .p-p-main button {
+    border: none;
+    outline: none;
+    background: #000;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .p-p-main button:hover {
+    background-color: #333;
+  }
+  
+  /* Media Queries */
+  
+  /* Small devices (phones) */
+  @media only screen and (max-width: 600px) {
+    .project-main {
+      padding: 1.5rem 0.75rem;
+    }
+    
+    .p-container {
+      max-width: 90%;
+    }
+    
+    .p-container:hover {
+      transform: translateY(-10px);
+    }
+    
+    .h3-p {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  }
+  
+  /* Medium devices (tablets) */
+  @media only screen and (min-width: 601px) and (max-width: 960px) {
+    .project-main > p {
+      width: 85%;
+    }
+    
+    .p-container {
+      max-width: 45%;
+    }
+  }
+  
+  /* Large devices (desktops) */
+  @media only screen and (min-width: 961px) and (max-width: 1280px) {
+    .project-main > p {
+      width: 80%;
+    }
+  }
+  
+  /* Extra large devices */
+  @media only screen and (min-width: 1281px) {
+    .p-p-main {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+  }
+  
+  /* For users who prefer reduced motion */
+  @media (prefers-reduced-motion: reduce) {
+    .p-container {
+      transition: none;
+    }
+    
+    .p-container:hover {
+      transform: none;
+    }
+  }
