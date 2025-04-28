@@ -139,6 +139,9 @@
     .pimg2, .pimg3 {
       min-height: 40vh;
     }
+    img{
+      width: 350px;
+    }
     
     /* Fix for parallax on mobile */
     .pimg1, .pimg2, .pimg3 {
