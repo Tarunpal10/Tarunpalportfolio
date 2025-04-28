@@ -191,10 +191,10 @@ div {
     .connctiom, .projects, .contacte {
         width: 85%;
         padding: 0.8rem;
-        margin-left: 220px;
+        /* margin-left: 50px; */
     }
     
-    @keyframes appear {
+    /* @keyframes appear {
         from {
             opacity: 0;
             transform: translateX(-100%);
@@ -203,7 +203,7 @@ div {
             opacity: 1;
             transform: translateX(0);
         }
-    }
+    } */
 }
 
 /* Medium devices (tablets) */
