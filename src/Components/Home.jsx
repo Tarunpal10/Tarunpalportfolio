@@ -69,7 +69,7 @@ const Home = () => {
             />
             <div className="mail">
               <a href="mailto:tpal59200@gmail.com"> Hire Me </a>
-              <a href="https://drive.google.com/file/d/10rucWyFfDpbipKmAXXMUfP-aY4UIrrxX/view?usp=drive_link">
+              <a href="https://drive.google.com/file/d/1xJ0OWuXVjyt7oxf47vhdz1ZWcr8xxGdt/view?usp=sharing">
                 {" "}
                 Get Resume <BsArrowUpRight />{" "}
               </a>

@@ -62,7 +62,7 @@ const Skill = () => {
           <img src={react} className="card-img-top" alt="React" />
           <div className="card-body">
             <h3 className="card-title">React Js</h3>
-            <p className="card-text">Rating: <FaStar /> <FaStar /> <FaStar /> <FaStar /> </p>
+            <p className="card-text"> Rating: <FaStar /> <FaStar /> <FaStar /> <FaStar /> </p>
           </div>
         </div>
 
